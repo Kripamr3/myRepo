@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:layout_marginEnd="5dp"-->
+    <!--android:layout_marginBottom="5dp"-->
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+
+    >
+        <ImageView android:layout_width="0dp"
+                   android:layout_weight="0.5"
+                   android:id="@+id/im1"
+                   android:src="@drawable/plant1"
+                   android:scaleType="centerCrop"
+                   android:layout_height="match_parent"/>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="1.5"
+                      android:orientation="vertical"
+                      android:gravity="center|start"
+                      android:paddingTop="15dp"
+                      android:paddingBottom="15dp"
+                      android:paddingStart="10dp"
+                      android:paddingEnd="10dp"
+                      android:layout_height="match_parent">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                      android:textSize="16dp"
+                      android:text="Amaryllis"
+                      android:textStyle="bold"
+                      android:id="@+id/lltv1"
+                      android:padding="1dp"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/plantdesc"
+                      android:textSize="15dp"
+                      android:id="@+id/lltv2"
+                      android:textAlignment="viewStart"
+
+
+            />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:src="@drawable/addbutton"-->
+
+
+
+            <!--android:contentDescription="Add new Plant"-->
+            <!--android:layout_margin="16dp" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_width="wrap_content"
+                                                                           android:layout_height="wrap_content"
+                                                                           android:layout_gravity="end|bottom"
+
+
+
+
+                                                                           android:src="@drawable/plus"/>
+    <!--android:src="@drawable/addbutton"-->
+
+
+
+</androidx.cardview.widget.CardView>

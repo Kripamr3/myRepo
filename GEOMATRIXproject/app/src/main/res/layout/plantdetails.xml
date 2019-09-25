@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="64dp">
+        <ImageView android:layout_width="50dp" android:layout_height="40dp"
+                   android:src="@drawable/back"
+                   android:id="@+id/imgdet1"
+                   android:layout_margin="15dp"
+                   android:paddingTop="5dp"
+
+
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="40dp"
+                  android:layout_toRightOf="@+id/imgdet1"
+                  android:layout_marginLeft="20dp"
+                  android:id="@+id/pd1"
+                  android:textColor="#000000"
+                  android:text="Amaryllis"
+                  android:layout_marginTop="15dp"
+                  android:textSize="30dp"/>
+        <ImageView android:layout_width="30dp" android:layout_height="40dp"
+                   android:layout_toRightOf="@+id/pd1"
+                   android:src="@drawable/search"
+                   android:id="@+id/imgdet2"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginLeft="70dp"/>
+
+
+        <ImageView android:layout_width="20dp" android:layout_height="40dp"
+                   android:src="@drawable/noti"
+                   android:layout_toRightOf="@id/imgdet2"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginLeft="30dp"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+
+
+
+                    android:layout_height="match_parent">
+
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="0dp"
+
+                   android:src="@drawable/plant3"
+                   android:layout_weight="2.0"
+                   android:id="@+id/bigimage"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_below="@id/bigimage"
+                  android:id="@+id/bigtext"
+                  android:layout_height="0dp"
+                  android:layout_weight="3.0"
+                  android:layout_marginTop="0dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_width="120dp"
+                                                                               android:layout_height="wrap_content"
+                                                                               android:layout_gravity="end|bottom"
+                                                                               android:id="@+id/fab1"
+
+
+                                                                               android:src="@drawable/plus"/>
+
+
+
+
+
+    </LinearLayout>
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginRight="200dp"-->
+
+
+              <!--android:layout_height="wrap_content"/>-->
+</LinearLayout>
